@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Cairo;
+  src: url(./Fonts/Cairo-VariableFont_slnt\,wght.ttf);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  font-family: Cairo;
+}
+.card {
+  position: relative;
+  padding: 30px 20px 20px;
+  background: #fff;
+  width: 400px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.card::after {
+  content: 'A+';
+  position: absolute;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: #1278c9;
+  bottom: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.card img {
+  position: absolute;
+  top: -109px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card h3 {
+  margin: 0;
+  color: #1278c9;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.card > span {
+  color: #777;
+}
+.card .social {
+  padding: 15px 0;
+  border-top: 2px solid #eee;
+  margin-top: 15px;
+}
+.card .social div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 15px 10px;
+}
+.card .social div:not(:last-of-type) {
+  margin-bottom: 10px;
+}
